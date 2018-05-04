@@ -40,33 +40,12 @@ class FruitsTableViewController: UITableViewController {
         let label = UILabel(frame: CGRect(x: 30, y: 0, width: tableView.bounds.width - 30, height: SectionHeaderHeight))
         label.font = UIFont.boldSystemFont(ofSize: 30)
         label.textColor = UIColor.blue
-//        if let tableSection = TableSection(rawValue: section) {
-//            switch tableSection {
-//            case .action:
-//                label.text = self.section[section]
-//            case .comedy:
-//                label.text = self.section[section]
-//            case .drama:
-//                label.text = self.section[section]
-//            case .indie:
-//                label.text = self.section[section]
-//            default:
-//                label.text = self.section[section]
-//            }
-//        }
+
         label.text = self.section[section]
         view.addSubview(label)
         return view
     }
-//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let uv = UIView()
-//        uv.backgroundColor = UIColor.blue
-//        return uv
-//    }
-    
-//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 0.5
-//    }
+
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Fruits_Identifier", for: indexPath)
