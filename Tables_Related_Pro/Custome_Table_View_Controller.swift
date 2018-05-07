@@ -10,11 +10,7 @@ import UIKit
 class FruitTableViewCell: UITableViewCell{
 
     @IBOutlet var label: UILabel!
-    //@IBOutlet var label: UILabel!
-    
     @IBOutlet var fruitImageView: UIImageView!
-    //@IBOutlet weak var label: UILabel!
-    //@IBOutlet weak var fruitImageView: UIImageView!
 }
 class Custome_Table_View_Controller: UITableViewController {
 
@@ -46,30 +42,22 @@ class Custome_Table_View_Controller: UITableViewController {
 
 
 
-    // let SectionHeaderHeight: CGFloat = 30
-
-//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: SectionHeaderHeight))
-//        view.backgroundColor = UIColor(red: 253.0/255.0, green: 240.0/255.0, blue: 196.0/255.0, alpha: 1)
-//        let label = UILabel(frame: CGRect(x: 30, y: 0, width: tableView.bounds.width - 30, height: SectionHeaderHeight))
-//        label.font = UIFont.boldSystemFont(ofSize: 30)
-//        label.textColor = UIColor.blue
-//
-//        label.text = self.section[section]
-//        view.addSubview(label)
-//        return view
-//    }
 
 
-
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "custom_Identifier", for: indexPath) as! FruitTableViewCell
 
         let fruitName = fruits[indexPath.row]
+        cell.label.layer.cornerRadius = cell.label.frame.height / 2
         cell.label?.text = self.items[indexPath.section][indexPath.row]
         //cell.textLabel?.text = fruitName
         //cell.detailTextLabel?.text = "Delicious! iuhkuhdfgkdhs fgklkldfigfkdlsgfkdlkfdghkfdhgkl kh uuuuhibi uiui"
-
+        cell.fruitImageView?.layer.cornerRadius = cell.fruitImageView.frame.height / 2 
+        
         cell.fruitImageView?.image = UIImage(named: fruitName)
 
         return cell
