@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1443930A20A03DFC00B82F80 /* Fruits_Table_View_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443930920A03DFC00B82F80 /* Fruits_Table_View_Controller.swift */; };
+		1443930C20A03FFF00B82F80 /* Custome_Table_View_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443930B20A03FFF00B82F80 /* Custome_Table_View_Controller.swift */; };
 		14FDD21C205923A0007BDB06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDD21B205923A0007BDB06 /* AppDelegate.swift */; };
-		14FDD21E205923A0007BDB06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDD21D205923A0007BDB06 /* ViewController.swift */; };
+		14FDD21E205923A0007BDB06 /* DessertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDD21D205923A0007BDB06 /* DessertTableViewController.swift */; };
 		14FDD221205923A0007BDB06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14FDD21F205923A0007BDB06 /* Main.storyboard */; };
 		14FDD223205923A0007BDB06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14FDD222205923A0007BDB06 /* Assets.xcassets */; };
 		14FDD226205923A0007BDB06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14FDD224205923A0007BDB06 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1443930920A03DFC00B82F80 /* Fruits_Table_View_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits_Table_View_Controller.swift; sourceTree = "<group>"; };
+		1443930B20A03FFF00B82F80 /* Custome_Table_View_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custome_Table_View_Controller.swift; sourceTree = "<group>"; };
 		14FDD218205923A0007BDB06 /* Tables_Related_Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tables_Related_Pro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14FDD21B205923A0007BDB06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14FDD21D205923A0007BDB06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14FDD21D205923A0007BDB06 /* DessertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertTableViewController.swift; sourceTree = "<group>"; };
 		14FDD220205923A0007BDB06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14FDD222205923A0007BDB06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14FDD225205923A0007BDB06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				14FDD21B205923A0007BDB06 /* AppDelegate.swift */,
-				14FDD21D205923A0007BDB06 /* ViewController.swift */,
+				14FDD21D205923A0007BDB06 /* DessertTableViewController.swift */,
+				1443930920A03DFC00B82F80 /* Fruits_Table_View_Controller.swift */,
+				1443930B20A03FFF00B82F80 /* Custome_Table_View_Controller.swift */,
 				14FDD21F205923A0007BDB06 /* Main.storyboard */,
 				14FDD222205923A0007BDB06 /* Assets.xcassets */,
 				14FDD224205923A0007BDB06 /* LaunchScreen.storyboard */,
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14FDD21E205923A0007BDB06 /* ViewController.swift in Sources */,
+				1443930A20A03DFC00B82F80 /* Fruits_Table_View_Controller.swift in Sources */,
+				14FDD21E205923A0007BDB06 /* DessertTableViewController.swift in Sources */,
+				1443930C20A03FFF00B82F80 /* Custome_Table_View_Controller.swift in Sources */,
 				14FDD21C205923A0007BDB06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJP38QN49Q;
 				INFOPLIST_FILE = Tables_Related_Pro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nvg.Tables-Related-Pro";
@@ -293,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJP38QN49Q;
 				INFOPLIST_FILE = Tables_Related_Pro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nvg.Tables-Related-Pro";
