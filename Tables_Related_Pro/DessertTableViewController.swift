@@ -17,7 +17,8 @@ class DessertTableViewController : UITableViewController{
         "Vanilla Cupcake": "Cake",
         "Shake": "Drink",
         "Malted": "Drink",
-        "Root Beer Float": "Drink"]
+        "Root Beer Float": "Drink",
+        "Dark Choclate" : "Ice Cream"]
     var dessertList = [String]()
     
     override func viewDidLoad() {
